@@ -6,24 +6,23 @@ public class PhoneNumber {
 
 
 	public static String createPhoneNumber(int[] numbers) {
-		StringBuffer prefix = new StringBuffer("");
 		
-		IntStream.range(0, 3).forEach(index ->{
-			prefix.append(numbers[index]);
-		});
+		StringBuffer prefix = numbersBetween(numbers,0,3);
 		
-		StringBuffer middle = new StringBuffer("");
-		IntStream.range(3, 6).forEach(index ->{
-			middle.append(numbers[index]);
-		});
+		StringBuffer middle = numbersBetween(numbers,3,6);
 		
-		StringBuffer last = new StringBuffer("");
-		IntStream.range(6, 10).forEach(index ->{
-			last.append(numbers[index]);
-		});
+		StringBuffer last = numbersBetween(numbers,6,10);
 
 		return String.format("(%s) %s-%s", prefix, middle, last);
 				
+	}
+
+	private static StringBuffer numbersBetween(int[] numbers,int start, int end) {
+		StringBuffer block = new StringBuffer("");
+		IntStream.range(start, end).forEach(index ->{
+			block.append(numbers[index]);
+		});
+		return block;
 	}
 
 }
