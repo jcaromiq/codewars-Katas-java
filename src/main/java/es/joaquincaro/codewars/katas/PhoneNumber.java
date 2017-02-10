@@ -1,5 +1,6 @@
 package es.joaquincaro.codewars.katas;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class PhoneNumber {
@@ -7,14 +8,20 @@ public class PhoneNumber {
 
 	public static String createPhoneNumber(int[] numbers) {
 		
-		StringBuffer prefix = numbersBetween(numbers,0,3);
+		IntStream numberStream = Arrays.stream(numbers);
 		
-		StringBuffer middle = numbersBetween(numbers,3,6);
+		numbers = numberStream
+				.filter(number -> {
+					return !(number <0 || number >9);})
+				.toArray();
 		
-		StringBuffer last = numbersBetween(numbers,6,10);
+		if(numbers.length!= 10) throw new IllegalArgumentException();
 
-		return String.format("(%s) %s-%s", prefix, middle, last);
-				
+		return String.format("(%s) %s-%s", 
+				numbersBetween(numbers,0,3), 
+				numbersBetween(numbers,3,6), 
+				numbersBetween(numbers,6,10));
+
 	}
 
 	private static StringBuffer numbersBetween(int[] numbers,int start, int end) {
