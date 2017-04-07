@@ -3,6 +3,7 @@
 	<a target="_blank" href="https://travis-ci.org/jcaromiq/codewars-Katas"><img src="https://travis-ci.org/jcaromiq/codewars-Katas.svg?branch=master"></a>
 	<a href='https://coveralls.io/github/jcaromiq/codewars-Katas?branch=master'><img src='https://coveralls.io/repos/github/jcaromiq/codewars-Katas/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
+
 ## Money, Money, Money
 ### Description:
 Mr. Scrooge has a sum of money 'P' that wants to invest, and he wants to know how many years 'Y' this sum has to be kept in the bank in order for this sum of money to amount to 'D'.
