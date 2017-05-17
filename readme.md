@@ -1,6 +1,6 @@
 # Codewars Katas
 <p align="left">
-	<a target="_blank" href="https://travis-ci.org/jcaromiq/codewars-Katas"><img src="https://travis-ci.org/jcaromiq/codewars-Katas.svg?branch=master"></a>
+	<a target="_blank" href="https://travis-ci.org/jcaromiq/codewars-Katas"><img src="https://travis-ci.org/jcaromiq/codewars-Katas-java.svg?branch=master"></a>
 	<a href='https://coveralls.io/github/jcaromiq/codewars-Katas?branch=master'><img src='https://coveralls.io/repos/github/jcaromiq/codewars-Katas/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
